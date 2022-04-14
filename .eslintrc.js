@@ -2,31 +2,31 @@ module.exports = {
   root: true,
 
   env: {
-    node: true
+    node: true,
   },
 
   parserOptions: {
     parser: "@typescript-eslint/parser",
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
 
   rules: {
     "no-console": "off",
     "no-debugger": "off",
-    "@typescript-eslint/no-this-alias": ["off"]
+    "@typescript-eslint/no-this-alias": ["off"],
   },
 
   extends: [
-    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-recommended",
     "eslint:recommended",
     "@vue/prettier",
-    "@vue/typescript",
     "@vue/typescript/recommended",
-    "@vue/prettier/@typescript-eslint"
+    "@vue/eslint-config-typescript/recommended",
+    "@vue/eslint-config-prettier",
   ],
 
   globals: {
     defineProps: "readonly",
-    defineEmits: "readonly"
-  }
+    defineEmits: "readonly",
+  },
 };
