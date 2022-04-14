@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import InlineImage from './components/InlineImage.vue'
+import InlineImage from "./components/InlineImage.vue";
 </script>
 
 <template>
